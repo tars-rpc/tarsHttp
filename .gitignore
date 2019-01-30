@@ -1,0 +1,14 @@
+.idea
+.DS_Store
+*.log
+*.tgz
+*.pid
+.settings/
+.git/å
+.project
+.vscode
+.env
+*.lock
+runtime/
+vendor/
+temp/
