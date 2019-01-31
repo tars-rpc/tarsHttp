@@ -1,0 +1,27 @@
+{
+  "name" : "tars-http",
+  "description": "tars http demo",
+  "require": {
+    "php":">=7.2",
+    "phptars/tars-server": ">0.1",
+    "phptars/tars-deploy": ">0.1",
+    "phptars/tars-log": ">0.1",
+    "phptars/tars2php": ">0.1",
+    "ext-zip" : ">=0.0.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "HttpTest\\" : "./"
+    }
+  },
+  "minimum-stability": "stable",
+  "scripts" : {
+    "deploy" : "\\Tars\\deploy\\Deploy::run"
+  },
+  "repositories": {
+    "tars": {
+      "type": "composer",
+      "url": "https://packagist.laravel-china.org/"
+    }
+  }
+}
