@@ -1,0 +1,11 @@
+module service
+{
+    interface {
+
+        int apply(string paramstr, out string result);
+
+        int get(string paramstr, out string result);
+
+        int put(string paramstr, out string result);
+    };
+}
