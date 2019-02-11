@@ -12,3 +12,4 @@
 runtime/
 vendor/
 temp/
+/src/*.tgz
