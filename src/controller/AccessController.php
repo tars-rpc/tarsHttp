@@ -17,21 +17,24 @@ class AccessController extends BaseController
     use CommunicatorConfigTrait;
 
     /**
-     * @desc 获取用户
+     * @desc 获取用户  curl 172.17.0.3:10006/Access/getUser
      */
-    public function getUser()
+    public function ActionGetUser()
     {
-        return [
+        $data = [
             'name' => 'suhanyujie',
             'age'  => 27,
             'home' => 'JiangXi',
         ];
+
+        $resp = json_encode($data, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
+        return $this->sendRaw($resp);
     }
 
     /**
      * @desc 作为客户端，调用tars服务
      */
-    public function userRegiste()
+    public function AcrtionUserRegiste()
     {
         $config = $this->tarsClientConfig();
         //$config->setIVersion($this->iVersion);//默认为3，调java时，传1
