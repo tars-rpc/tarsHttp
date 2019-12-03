@@ -14,6 +14,9 @@
 * `cd scropts`
 * `chmod u+x ./tars2php.sh && ./tars2php.sh`
 
+### 编译打包
+* `composer deploy`
+
 ## tars编写
 * 大括号后，需要加上分号
 
